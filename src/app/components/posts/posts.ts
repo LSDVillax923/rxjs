@@ -2,8 +2,7 @@ import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-posts',
-  templateUrl: './posts.component.html'
+  standalone: true,
+  templateUrl: './posts.html',
+  styleUrl: './posts.css'
 })
-export class PostsComponent {
-  @Input() posts: any[];
-}

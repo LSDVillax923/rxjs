@@ -2,8 +2,11 @@ import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-info',
-  templateUrl: './info.component.html'
+  standalone: true,
+  templateUrl: './info.html',
+  styleUrl: './info.css'
 })
-export class InfoComponent {
-  @Input() user: any;
+
+export class Info {
+  @Input() user: unknown;
 }
